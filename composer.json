@@ -1,0 +1,20 @@
+{
+    "name": "St0iK framework",
+    "type": "Framework",
+    "description": "A simple PHP MVC Framework for PHP 5.3+",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dimitris Stoikidis",
+            "email": "jstoikidis@gmail.com",
+            "homepage": "http://twitter.com/St0iK",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {"": "app/"}
+    }
+}
