@@ -12,7 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=5.3.0",
+        "php-activerecord/php-activerecord": "dev-master"
     },
     "autoload": {
         "psr-4": {"": "app/"}

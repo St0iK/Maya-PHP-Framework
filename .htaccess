@@ -5,7 +5,7 @@ RewriteEngine On
 RewriteBase /stoik
 
 # for home
-RewriteBase /
+#RewriteBase /
 
 #comment out to keep trailing slashes
 RewriteRule ^(.+)/$ $1 [R=307,L]

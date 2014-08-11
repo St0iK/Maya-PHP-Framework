@@ -2,13 +2,6 @@
 use core\view as View;
 use core\controller as Controller;
 
-/*
- * Welcome controller
- *
- * @author David Carr - dave@daveismyname.com - http://www.daveismyname.com
- * @version 2.1
- * @date June 27, 2014
- */
 class Welcome extends Controller{
 
 	/**
@@ -23,8 +16,22 @@ class Welcome extends Controller{
 	 */
 	public function index(){	
 	
-		echo $this->welcome->myWelcomeFunction();
-		echo $this->user->getAllUsers();
+		# create Tito
+		$user = \User::create(array('username' => 'Tito', 'password' => 'VA'));
+		  
+		# read Tito
+		$user = \User::find_by_username('Tito')->to_array();
+		echo "<pre>";
+		print_r($user);
+		echo "</pre>";
+		
+		# update Tito
+		#$user->name = 'Tito Jr';
+		#$user->save();
+		 
+		# delete Tito
+		//$user->delete(); 
+		
 		$data['title'] = 'js13';
 		View::render('welcome/welcome',$data);
 		

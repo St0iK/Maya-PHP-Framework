@@ -26,7 +26,7 @@ class Controller{
 	public function __construct(){			
 		new Config();
 		$this->view = new View();
-		$this->parseModelsFolder();		
+		//$this->parseModelsFolder();		
 
 	}
 
@@ -35,10 +35,10 @@ class Controller{
 	 * @param String $key   
 	 * @param Object $value The object class that will be instantiated
 	 */
-    public function __set($key, $value)
-    {	
-    	$this->$key = $value;
-    }
+    // public function __set($key, $value)
+    // {	
+    // 	$this->$key = $value;
+    // }
 
 	/**
 	 * Error if controller is not found
