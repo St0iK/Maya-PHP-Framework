@@ -1,7 +1,11 @@
 Options -Indexes
 
 RewriteEngine On
+# for work
 RewriteBase /stoik
+
+# for home
+RewriteBase /
 
 #comment out to keep trailing slashes
 RewriteRule ^(.+)/$ $1 [R=307,L]

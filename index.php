@@ -1,4 +1,5 @@
 <?php
+use \core\boostrap as Boostrap;
 if(file_exists('vendor/autoload.php')){
 	require 'vendor/autoload.php';
 } else {
@@ -7,15 +8,8 @@ if(file_exists('vendor/autoload.php')){
 	echo "<p>Once composer is installed navigate to the working directory in your terminal/command promt and enter 'composer install'</p>";
 	exit;
 }
-use \core\router as Router;
 
-//$lol = new Router;
-//
-//
-echo "hi!";
-Router::get('simple', function(){ 
-  //do something simple
-  echo "Called from router!";
-});
-Router::send();
+$maya = new Boostrap;
+$maya->init();
+
 ?>
